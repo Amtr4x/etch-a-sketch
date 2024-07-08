@@ -53,3 +53,14 @@ body {
     scale: 0.95;
     box-shadow: none;
 }
+
+.grid__container-row {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.grid__container-row-square {
+    border: rgb(171, 171, 171) 1px solid;
+    flex: 1 1 auto;
+}
