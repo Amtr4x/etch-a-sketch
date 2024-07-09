@@ -56,3 +56,7 @@ const opacity = new Map();
 generateSquares(16);
 changeColor();
 manageOpacity();
+
+// reload page when the button is pressed
+const resetButton = document.querySelector(".grid__reset");
+resetButton.addEventListener("click", () => location.reload());
