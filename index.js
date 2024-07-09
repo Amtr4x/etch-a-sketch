@@ -32,7 +32,27 @@ function changeColor() {
     });
 }
 
-// TODO create a function to increase the opacity of the squares
+function manageOpacity() {
+    const gridContainer = document.querySelector(".grid__container");
+
+    gridContainer.addEventListener("mouseover", (event) => {
+        const square = event.target;
+
+        if (square.className !== "grid__container") {
+            let currentOpacity = opacity.get(square.id) || 1;
+
+            if (currentOpacity > 0.1) {
+                currentOpacity -= 0.1;
+                opacity.set(square.id, currentOpacity);
+            }
+
+            square.style.opacity = currentOpacity.toString();
+        }
+    });
+}
+
+const opacity = new Map();
 
 generateSquares(16);
 changeColor();
+manageOpacity();

@@ -21,12 +21,12 @@ body {
 }
 
 .grid__container {
+    background-color: #000000;
     display: flex;
     flex-wrap: wrap;
     flex: auto;
     width: 500px;
     height: 500px;
-    border: #252525 solid 3px;
     border-radius: 4px;
     gap: 1px;
 }
@@ -61,6 +61,5 @@ body {
 }
 
 .grid__container-row-square {
-    border: rgb(171, 171, 171) 1px solid;
     flex: 1 1 auto;
 }
